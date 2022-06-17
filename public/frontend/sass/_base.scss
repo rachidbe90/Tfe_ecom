@@ -1,0 +1,346 @@
+//*-------------Google Fonts---------------*/ 
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,400,400i,500,600,700;display=swap');
+
+@font-face {
+  font-family: Roboto-Regular;
+  src: url('../fonts/Roboto/Roboto-Regular.ttf');
+}
+
+@font-face {
+  font-family: Roboto-Bold;
+  src: url('../fonts/Roboto/Roboto-Bold.ttf');
+}
+
+@font-face {
+  font-family: Roboto-Medium;
+  src: url('../fonts/Roboto/Roboto-Medium.ttf');
+}
+
+@font-face {
+  font-family: Roboto-Thin;
+  src: url('../fonts/Roboto/Roboto-Thin.ttf');
+}
+
+@font-face {
+  font-family: Helvetica-light;
+  src: url('../fonts/helvetica-light-587ebe5a59211.ttf');
+}
+
+@font-face {
+  font-family: Helvetica;
+  src: url('../fonts/Helvetica.ttf');
+}
+
+@font-face {
+  font-family: WorkSans-light;
+  src: url('../fonts/static/WorkSans-Light.ttf');
+}
+
+@font-face {
+  font-family: WorkSans-medium;
+  src: url('../fonts/static/WorkSans-Medium.ttf');
+}
+
+@font-face {
+  font-family: WorkSans-Regular;
+  src: url('../fonts/static/WorkSans-Regular.ttf');
+}
+
+
+@font-face {
+  font-family: WorkSans-SemiBold;
+  src: url('../fonts/static/WorkSans-SemiBold.ttf');
+}
+
+
+@font-face {
+  font-family: WorkSans-Thin;
+  src: url('../fonts/static/WorkSans-Thin.ttf');
+}
+
+
+@font-face {
+  font-family: WorkSans-Bold;
+  src: url('../fonts/static/WorkSans-Bold.ttf');
+}
+
+
+
+/*----------------------------------------*/
+/* Default CSS
+/*----------------------------------------*/
+* {
+  margin: 0px;
+  padding: 0px;
+  border: none;
+  outline: none;
+  font-size: 100%;
+  line-height: inherit;
+  -ms-word-wrap: break-word;
+  word-wrap: break-word;
+}
+
+html,
+body {
+  // font-family: Roboto, Arial, sans-serif;
+  font-family: WorkSans-Regular;
+  letter-spacing: 0;
+  font-style: normal;
+  font-size: 14px;
+  color: #212121;
+  line-height: 1.4;
+
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  transition: all 0.3s ease-out 0s;
+}
+
+dl,
+ol,
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+a,
+.button,
+.btn {
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+}
+
+a:focus,
+.button:focus,
+.btn:focus {
+  text-decoration: none;
+  outline: none;
+}
+
+a:focus,
+a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+.btn:focus,
+button:focus,
+input:focus,
+textarea,
+textarea:focus,
+.form-control:focus {
+  outline: 0;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: WorkSans-light;
+  font-style: normal;
+  font-weight: 400;
+}
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+  color: inherit;
+}
+
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+}
+
+hr {
+  border-bottom: 1px solid #eceff8;
+  border-top: 0 none;
+  padding: 0;
+}
+
+label {
+  color: #7e7e7e;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+*::-moz-selection {
+  background: #d6b161;
+  color: #fff;
+  text-shadow: none;
+}
+
+::-moz-selection {
+  background: #444;
+  color: #fff;
+  text-shadow: none;
+}
+
+::selection {
+  background: #ff0000;
+  color: #fff;
+  text-shadow: none;
+}
+
+*::-moz-placeholder {
+  color: #555555;
+  font-size: 14px;
+  opacity: 1;
+}
+
+*::placeholder {
+  color: #555555;
+  font-size: 14px;
+  opacity: 1;
+}
+
+.dropdown:hover>.dropdown-menu {
+  display: block;
+}
+
+.dropdown>.dropdown-toggle:active {
+  /*Without this, clicking will make it sticky*/
+  pointer-events: none;
+}
+
+/*------------------ Utility------------*/
+
+.light-text {
+  font-weight: 100;
+
+  strong {
+    color: $primary-color;
+    font-weight: 600;
+  }
+}
+
+.sub-text {
+  font-weight: 400;
+}
+
+
+/*---------------------
+  Helper CSS
+-----------------------*/
+.section-title {
+  margin-bottom: 50px;
+
+  h2 {
+    color: $normal-color;
+    font-weight: 700;
+    position: relative;
+
+    &:after {
+      position: absolute;
+      left: 0;
+      bottom: -15px;
+      right: 0;
+      height: 4px;
+      width: 80px;
+      background: $primary-color;
+      content: "";
+    }
+  }
+}
+
+.set-bg {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+}
+
+.text-white h1,
+.text-white h2,
+.text-white h3,
+.text-white h4,
+.text-white h5,
+.text-white h6,
+.text-white p,
+.text-white span,
+.text-white li,
+.text-white a {
+  color: #fff;
+}
+
+/* buttons CSS */
+.primary-btn {
+  font-family: Arial, Helvetica, sans-serif;
+  display: inline-block;
+  font-size: 14px;
+  padding: 8px 16px 8px;
+  background-color: $primary-color;
+  color: #fff;
+  font-weight: 500;
+  border: 1px solid $primary-color;
+
+  &:hover,
+  &:focus,
+  &:active {
+    border: 2px solid $primary-color;
+    background-color: transparent;
+    color: $primary-color;
+  }
+}
+
+.secondary-btn {
+  font-family: Arial, Helvetica, sans-serif;
+  display: inline-block;
+  font-size: 14px;
+  padding:10px 20px 10px;
+  background-color: #fff;
+  color: $primary-color;
+  font-weight: 500;
+  border: 2px solid $primary-color;
+  // padding: 16px 28px 14px;
+  margin-right: 6px;
+  margin-bottom: 5px;
+
+  &:hover,
+  &:focus,
+  &:active {
+    border: 2px solid $primary-color;
+    background-color: $primary-color;
+    color: #fff;
+  }
+}
+
+
+.site-btn {
+  font-size: 14px;
+  color: #ffffff;
+  font-weight: 800;
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 16px 27px 25px 27px;
+  background: #ff0000;
+  border: none;
+  border-radius: 4px;
+}
+
+.breadcrumb-section {
+  background-color: #fafafa;
+
+  .breadcrumb {
+    background-color: #fafafa;
+    margin: 0;
+  }
+}
